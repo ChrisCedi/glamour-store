@@ -1,8 +1,9 @@
+import { Navagation } from "./navigation/Navigation";
 
 function App() {
   return (
-    <div className="App">
-     <p>hola</p>
+    <div>
+     <Navagation/>
     </div>
   );
 }

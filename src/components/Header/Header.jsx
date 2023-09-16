@@ -3,6 +3,7 @@ import { AppBar, Toolbar, Button, Typography } from "@material-ui/core";
 import { useStyles } from "./HeaderStyles";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   const classes = useStyles();
@@ -12,7 +13,9 @@ export const Header = () => {
     <AppBar>
       <Toolbar className={classes.header}>
         <Typography>Glamour store</Typography>{" "}
-        <Button startIcon={<ShoppingCartIcon />}>{inCart?.total}</Button>
+        <Link to={"/summary"}>
+          <Button startIcon={<ShoppingCartIcon />}>{inCart?.total}</Button>
+        </Link>
       </Toolbar>
     </AppBar>
   );

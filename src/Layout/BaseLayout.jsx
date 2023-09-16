@@ -2,6 +2,7 @@ import React from "react";
 import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
 import { useStyles } from "./BaseLayoutStyles";
+import { Container } from "@material-ui/core";
 
 export const BaseLayout = ({ children }) => {
   const classes = useStyles();
@@ -9,7 +10,7 @@ export const BaseLayout = ({ children }) => {
   return (
     <div>
       <Header />
-      <div className={classes.body}>{children}</div>
+      <Container className={classes.body}>{children}</Container>
       <Footer />
     </div>
   );

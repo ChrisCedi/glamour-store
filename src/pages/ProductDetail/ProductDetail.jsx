@@ -37,7 +37,9 @@ export const ProductDetail = () => {
           <img src={image} alt={title} className={classes.image} />
         </Grid>
         <Grid item xs={12} md={6} className={classes.gridDetails}>
-          <Typography variant="h4">{title}</Typography>
+          <Typography variant="h4" className={classes.productName}>
+            {title}
+          </Typography>
           <div className={classes.boxRating}>
             <Typography variant="h6" className={classes.price}>
               $ {price}

@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     height: "65vh",
     width: "60%",
     [theme.breakpoints.down("xs")]: {
-      height: "40vh",
+      height: "90%",
       width: "60%",
     },
   },
@@ -25,12 +25,15 @@ const useStyles = makeStyles((theme) => ({
     height: "75vh",
     padding: theme.spacing(6),
     [theme.breakpoints.down("xs")]: {
-      height: "85vh",
+      height: "85%",
     },
   },
   boxRating: {
     display: "flex",
     alignItems: "center",
+  },
+  productName: {
+    fontSize: "20px",
   },
   price: {
     paddingRight: theme.spacing(8),
@@ -38,6 +41,7 @@ const useStyles = makeStyles((theme) => ({
   boxItems: {
     display: "flex",
     alignItems: "center",
+    padding: "20px 0px",
   },
   count: {
     padding: "0px 14px",

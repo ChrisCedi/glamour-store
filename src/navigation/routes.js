@@ -6,7 +6,7 @@ const routes = [
         layout: Home,
         component: Home,
         exact: true,
-        routeMessage: "Productos"
+        routeMessage: "Glamour Store"
     }
 ];
 

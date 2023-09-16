@@ -1,10 +1,12 @@
 import { Navagation } from "./navigation/Navigation";
+import { Provider } from "react-redux";
+import store from "./redux/store";
 
 function App() {
   return (
-    <div>
-     <Navagation/>
-    </div>
+    <Provider store={store}>      
+      <Navagation/>
+    </Provider>
   );
 }
 

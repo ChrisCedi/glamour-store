@@ -19,7 +19,7 @@ export const ProductDetail = () => {
   }, []);
 
   const handleAddtoCart = () => {
-    let productAdded = { name: title, count, image };
+    let productAdded = { title: title, count, image, price };
     let newList = [...inCart.list, productAdded];
     let total = 0;
     newList.forEach((valor) => {

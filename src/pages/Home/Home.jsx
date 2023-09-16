@@ -15,7 +15,7 @@ export const Home = () => {
   }, [dispatch]);
 
   return (
-    <Container className={classes.container}>
+    <div className={classes.container}>
       <Typography className={classes.title} variant="h3">
         Los mejores lanzamientos
       </Typography>
@@ -26,6 +26,6 @@ export const Home = () => {
           </Grid>
         ))}
       </Grid>
-    </Container>
+    </div>
   );
 };

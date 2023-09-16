@@ -21,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     textAlign: "center",
     fontWeight: 600,
+    padding: theme.spacing(1),
   },
 }));
 

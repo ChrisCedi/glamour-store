@@ -10,7 +10,7 @@ export const CardProduct = ({ product }) => {
     <div className={classes.card}>
       <img src={image} alt={title} className={classes.image} />
       <Typography className={classes.title}>{title}</Typography>
-      <Typography>{price}</Typography>
+      <Typography>$ {price}</Typography>
     </div>
   );
 };

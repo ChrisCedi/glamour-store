@@ -1,16 +1,10 @@
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
-  container: {
+  header: {
     display: "flex",
-    height: "100%",
-    width: "100%",
-    flexDirection: "column",
+    justifyContent: "space-between",
     alignItems: "center",
-    paddingBottom: theme.spacing(8),
-  },
-  title: {
-    padding: theme.spacing(4),
   },
 }));
 

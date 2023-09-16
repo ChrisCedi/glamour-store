@@ -5,6 +5,12 @@ const useStyles = makeStyles((theme) => ({
     height: 190,
     backgroundColor: "black",
     bottom: 0,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  textFooter: {
+    color: "white",
   },
 }));
 

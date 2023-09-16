@@ -18,7 +18,7 @@ export const SummaryTable = () => {
   const { cart, inCart, handleDecrement, handleIncrement } = useSummaryTable();
 
   return (
-    <div>
+    <div className={classes.tableContainer}>
       {inCart.list.length > 0 ? (
         <TableContainer component={Paper}>
           <Table>
@@ -33,7 +33,16 @@ export const SummaryTable = () => {
             <TableBody>
               {cart?.list.map((product, index) => (
                 <TableRow key={index}>
-                  <TableCell>{product.title}</TableCell>
+                  <TableCell>
+                    <div className={classes.productName}>
+                      <Typography> {product.title}</Typography>
+                      <img
+                        src={product.image}
+                        className={classes.image}
+                        alt="product"
+                      />
+                    </div>
+                  </TableCell>
                   <TableCell>{product.price}</TableCell>
                   <TableCell>
                     <div className={classes.boxItems}>

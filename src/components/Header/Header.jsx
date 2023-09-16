@@ -12,9 +12,13 @@ export const Header = () => {
   return (
     <AppBar>
       <Toolbar className={classes.header}>
-        <Typography>Glamour store</Typography>{" "}
+        <Link to={"/"} className={classes.title}>
+          <Typography variant="h6">Glamour store</Typography>
+        </Link>
         <Link to={"/summary"}>
-          <Button startIcon={<ShoppingCartIcon />}>{inCart?.total}</Button>
+          <Button color="primary" startIcon={<ShoppingCartIcon />}>
+            {inCart?.total}
+          </Button>
         </Link>
       </Toolbar>
     </AppBar>
